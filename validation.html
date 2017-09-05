@@ -1,0 +1,41 @@
+<!DOCTYPE HTML >
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>JS: Form Validation</title>
+    <!-- <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css"> -->
+  </head>
+
+  <body>
+    <a href="index.html">&lt;&lt;DOM & BOM homework</a>
+    <h2>JS: Form Validation</h2>
+
+    <script src="js/validation_script.js"></script>
+  </body>
+<footer>
+  <br><br>
+  <h2>Validation Criteria</h2>
+  <p>using JS create this form (by document.createElement) and append to body
+  on form submit you need validate below fields</p>
+  <ul>
+  <li>  age should contains only numbers</li>
+  <li>(pass) "123"</li>
+  <li>(pass) "0"</li>
+  <li>(pass) "008946798576948567948576948756984756"</li>
+  <li>(failed) "test"</li>
+  <li>(failed) "-1"</li>
+  <li>(failed) " 0"</li>
+  <li>(failed) "10e5"</li>
+  <li>username should start from "user_" (<span style="color:red">*or start with any number of symbol '*' before 'user_'?</span>)</li>
+  <li>(pass) <span style="color:red">**user_**test</span></li>
+  <li>(pass) <span style="color:red">**user_**213kjasd</span></li>
+  <li>(pass) user_@gmail.com</li>
+  <li>(failed) john</li>
+  <li>(failed) _user_test</li>
+  <li>(failed) testuser_test</li>
+  <li>field date should contain current date (format dd/mm/yyyy)</li>
+  <li>if data is not valid, alert message your data is invalid</li>
+</ul>
+</footer>
+</html>
