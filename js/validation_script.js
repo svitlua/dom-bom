@@ -60,6 +60,6 @@ document.forms["login"].onsubmit = function(){
     } else {
       valid_message +="Incorrect date, enter today's date";
     }
-    document.getElementById("form_validation").innerHTML = valid_message; //ERROR: ONLY WORKS ON CLICK, BUT DOESNT STAY
+    //document.getElementById("form_validation").innerHTML = valid_message; //ERROR: ONLY WORKS ON CLICK, BUT DOESNT STAY
     alert(valid_message);
 }
