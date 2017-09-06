@@ -3,7 +3,7 @@ formCreation();
 function formCreation(){
   var formEl = document.createElement("form");
   formEl.setAttribute('name', 'login');
-  formEl.setAttribute('method', 'post');
+  //formEl.setAttribute('method', 'post');
   var input_age = document.createElement("input");
   input_age.setAttribute('type', 'text');
   input_age.setAttribute('name', 'age');
