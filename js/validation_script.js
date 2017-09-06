@@ -3,7 +3,9 @@ formCreation();
 function formCreation(){
   var formEl = document.createElement("form");
   formEl.setAttribute('name', 'login');
+  //formEl.setAttribute('onsubmit', 'formValidation()');
   formEl.setAttribute('method', 'post');
+  //formEl.setAttribute('action', 'google.com');
   var input_age = document.createElement("input");
   input_age.setAttribute('type', 'text');
   input_age.setAttribute('name', 'age');
@@ -17,7 +19,8 @@ function formCreation(){
   input_date.setAttribute('name', 'date');
   input_date.setAttribute('value', 'dd/mm/yyyy');
   var input_submit = document.createElement("input");
-  input_submit.setAttribute('type', 'button');
+  input_submit.setAttribute('type', 'button'); //input_submit.setAttribute('type', 'submit');  - DOESNT work submit on gitpages
+    input_submit.setAttribute('id', 'button_click')
   input_submit.setAttribute('value', 'Validate Me');
   formEl.appendChild(input_age);
   formEl.appendChild(input_username);
@@ -29,7 +32,8 @@ function formCreation(){
   document.body.appendChild(h3_El);
 }
 
-document.forms["login"].onclick = function(){
+//document.forms["login"].onsubmit = function(){ - DOESNT WORK onsubmit on gitpages
+document.getElementById("button_click").onclick = function(){
     console.log("form validation");
     var valid_message="";
     // Checking Age
@@ -60,6 +64,6 @@ document.forms["login"].onclick = function(){
     } else {
       valid_message +="Incorrect date, enter today's date";
     }
+    document.getElementById("form_validation").innerHTML = valid_message; //ERROR: ONLY WORKS ON CLICK, BUT DOESNT STAY
     alert(valid_message);
-    document.getElementById("form_validation").innerHTML = valid_message; //ERROR: ONLY WORKS ON CLICK, BUT DOESNT STAY   
 }
