@@ -17,7 +17,7 @@ function formCreation(){
   input_date.setAttribute('name', 'date');
   input_date.setAttribute('value', 'dd/mm/yyyy');
   var input_submit = document.createElement("input");
-  input_submit.setAttribute('type', 'submit');
+  input_submit.setAttribute('type', 'button');
   input_submit.setAttribute('value', 'Validate Me');
   formEl.appendChild(input_age);
   formEl.appendChild(input_username);
@@ -29,7 +29,7 @@ function formCreation(){
   document.body.appendChild(h3_El);
 }
 
-document.forms["login"].onsubmit = function(){
+document.forms["login"].onclick = function(){
     console.log("form validation");
     var valid_message="";
     // Checking Age
