@@ -61,6 +61,5 @@ document.forms["login"].onclick = function(){
       valid_message +="Incorrect date, enter today's date";
     }
     alert(valid_message);
-    //document.getElementById("form_validation").innerHTML = valid_message; ERROR: ONLY WORKS ON CLICK, BUT DOESNT STAY
-    
+    document.getElementById("form_validation").innerHTML = valid_message; //ERROR: ONLY WORKS ON CLICK, BUT DOESNT STAY   
 }
