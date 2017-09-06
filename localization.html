@@ -1,0 +1,52 @@
+<!DOCTYPE HTML >
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>JS: Localization</title>
+    <!-- <link type="text/css" rel="stylesheet" href="css/normalize.css" />
+    <link type="text/css" rel="stylesheet" href="css/styles.css"> -->
+  </head>
+  <style>
+  .lang {
+    display: none;
+  }
+
+  .lang.visible {
+    display: flex;
+    visibility: visible;
+  }
+  img{
+    display: none;
+  }
+  </style>
+  <body>
+    <a href="index.html">&lt;&lt;DOM & BOM homework</a>
+    <h2>JS: Localization</h2>
+
+    <div id="languages">
+      <label>
+        <input type="radio" name="lang" value="ua" checked="checked">UA
+      </label>
+      <label>
+        <input type="radio" name="lang" value="ru">RU
+      </label>
+      <label>
+        <input type="radio" name="lang" value="eng">ENG
+      </label>
+      <button id="save">Save</button>
+    </div>
+
+    <div id="welcome-message">
+      <img src="images/flag-ua.png" alt="UA" class="lang lang-ua"/>
+      <img src="images/flag-ru.png" alt="RU" class="lang lang-ru"/>
+      <img src="images/flag-eng.png" alt="ENG" class="lang lang-eng"/>
+      <span class="lang lang-ua">Привіт</span>
+      <span class="lang lang-ru">Привет</span>
+      <span class="lang lang-eng">Hello</span>
+      <span class="lang lang-ua">Раді вас вітати!</span>
+      <span class="lang lang-ru">Рады вас приветствовать!</span>
+      <span class="lang lang-eng">Welcome!</span>
+    </div>
+</body>
+<script src="js/localization.js"></script>
+</html>
