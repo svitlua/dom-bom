@@ -1,0 +1,46 @@
+#homework{
+  position: fixed;
+  width: 200px;
+  height: 70px;
+  z-index: 10;
+  background-color: lightblue;
+  padding: .5rem .7rem;
+}
+.parallax {
+  min-height: 300px;
+  height: 400px;
+  margin: 0 auto;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.parallax article {
+  position: absolute;
+  padding: 2rem 3rem;
+  margin: 1rem 3rem;
+  background-color: white;
+  opacity: 0.85;
+}
+h2{
+  text-align: center;
+}
+
+#night-sky{
+  background: url(../images/night-sky.jpg) center 0 no-repeat;
+}
+#astrology{
+  background: url(../images/astrology-globe.jpg) center 0 no-repeat;
+}
+#zodiac{
+  background: url(../images/zodiac-map.jpg) center 0 no-repeat;
+}
+#moon{
+  background: url(../images/moon.jpg) center 0 no-repeat;
+}
+
+.content{
+  padding: 2rem 3rem;
+  margin: 1rem 3rem;
+}
