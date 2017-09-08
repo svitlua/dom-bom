@@ -1,0 +1,56 @@
+<!DOCTYPE HTML >
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <title>JS: List of Employees</title>
+    <link type="text/css" rel="stylesheet" href="css/employees.css">
+  </head>
+  <body>
+        <a href="index.html">&lt;&lt;DOM & BOM homework</a>
+        <h3>JS: List of Employees</h3>
+
+        <form id="maxEmployeeNumber">
+            Enter max number of employees:
+            <input type="number" name="max">
+            <input id="maxBtn" type="button" value="Set">
+        </form>
+
+        <div id="max_number">
+        </div>
+
+        <!-- <button id="clearBtn">Clear all data</button> -->
+
+        <ul id="employeeList">
+          <li>
+             <span class="employeeFirstName">Firstname</span>
+             <span class="employeeLastName">Lastname</span>
+             <span class="employeeSalary">Salary</span>
+             <span class="employeePosition">Position</span>
+          </li>
+        </ul>
+
+        <div id="stats">
+            <span id="employeeNum"></span><br>
+            <span id="averageSalary"></span>
+        </div>
+
+        <button id="addEmployeeBtn">Add new employee</button>
+
+        <form id="addEmployeeForm">
+            First name:<br>
+            <input type="text" name="firstname">
+            <br>
+            Last name:<br>
+            <input type="text" name="lastname">
+            <br>
+            Salary(in $):<br>
+            <input type="number" name="salary">
+            <br>
+            Position:<br>
+            <input type="text" name="position">
+            <br>
+            <input id="addBtn" type="button" value="Add">
+         </form>
+</body>
+  <script src="js/employees.js"></script>
+</html>
