@@ -1,0 +1,53 @@
+#addEmployeeForm{
+  visibility: hidden;
+  line-height: 1.5rem;
+}
+
+#addEmployeeBtn{
+  visibility: hidden;
+}
+/*#clearBtn{
+  visibility: hidden;
+}*/
+
+#max_number{
+  visibility: hidden;
+}
+
+#employeeList{
+  visibility: hidden;
+}
+
+#employeeList li{
+  display: flex;
+  width: 50%;
+  flex-direction: row;
+}
+.employeeFirstName{
+  width:20%;
+  padding: 1rem 1rem;
+  border: 1px solid black;
+}
+.employeeLastName{
+  width:30%;
+  padding: 1rem 1rem;
+  border: 1px solid black;
+}
+.employeeSalary{
+  width:20%;
+  padding: 1rem 1rem;
+  border: 1px solid black;
+}
+.employeePosition{
+  width:30%;
+  padding: 1rem 1rem;
+  border: 1px solid black;
+}
+
+li{
+  list-style: none;
+}
+
+input{
+  font-size: .75rem;
+}
