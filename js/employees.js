@@ -41,7 +41,7 @@ document.getElementById('addEmployeeBtn').onclick = function (){
   }
 }
 
-/*
+
 document.getElementById('clearBtn').onclick = function (){
   maxEmployeeNumber = 0;
   employeeArr = [];
@@ -52,15 +52,49 @@ document.getElementById('clearBtn').onclick = function (){
   document.getElementById('addEmployeeForm').style.visibility = "hidden";
   document.getElementById('employeeList').style.visibility = "hidden";
   document.getElementById('stats').style.visibility = "hidden";
+  //Clearing Table
+  var list_clear= document.getElementById("employeeList");
+  while (list_clear.hasChildNodes()) {
+    list_clear.removeChild(list_clear.firstChild);
+  }
 }
-*/
 
 document.getElementById('addBtn').onclick = function (){
   if (formValidation()){
     document.getElementById('addEmployeeForm').style.visibility = "hidden";
     var newEmployee = new employee(first, last, salary, position);
     employeeArr.push(newEmployee);
-
+    if (employeeArr.length === 1){ // Create List of Lables in the employee list (Firstname - Lastname-Salary-Position)
+      /*<li>
+         <span class="employeeFirstName">Firstname</span>
+         <span class="employeeLastName">Lastname</span>
+         <span class="employeeSalary">Salary</span>
+         <span class="employeePosition">Position</span>
+      </li>*/
+      var $li = document.createElement("li");
+      $li.setAttribute("class", "employee_li");
+      var $span_first = document.createElement("span");
+      $span_first.setAttribute('class', 'employeeFirstName');
+      var content = document.createTextNode("Firstname");
+      $span_first.appendChild(content);
+      var $span_last = document.createElement("span");
+      $span_last.setAttribute('class', 'employeeLastName');
+      content = document.createTextNode("LastName");
+      $span_last.appendChild(content);
+      var $span_salary = document.createElement("span");
+      $span_salary.setAttribute('class', 'employeeSalary');
+      content = document.createTextNode("Salary");
+      $span_salary.appendChild(content);
+      var $span_position = document.createElement("span");
+      $span_position.setAttribute('class', 'employeePosition');
+      content = document.createTextNode("Position");
+      $span_position.appendChild(content);
+      $li.appendChild($span_first);
+      $li.appendChild($span_last);
+      $li.appendChild($span_salary);
+      $li.appendChild($span_position);
+      document.getElementById("employeeList").appendChild($li);
+    }
     // Adding New Employee to employeeList <UL>
     var $li = document.createElement("li");
     $li.setAttribute("class", "employee_li");
